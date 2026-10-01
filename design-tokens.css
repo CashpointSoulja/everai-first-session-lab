@@ -1,0 +1,32 @@
+@font-face{font-family:Aspekta;src:url('assets/aspekta-variable.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:Newsreader;src:url('assets/newsreader-italic.ttf') format('truetype');font-style:italic;font-weight:400;font-display:swap}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #0428cb;
+  --ink: #080d31;
+  --deep-blue: #00052e;
+  --muted-dark: rgb(255 255 255 / 70%);
+  --muted-light: #676767;
+  --image-radius: 10px;
+  --action-radius: 100px;
+  --font-body: Aspekta, Arial, sans-serif;
+  --font-accent: Newsreader, Georgia, serif;
+  --edge: rgb(255 255 255 / 15%);
+  --hero-overlay: rgb(0 0 0 / 10%);
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-30: 30px;
+  --space-36: 36px;
+  --space-40: 40px;
+  --space-50: 50px;
+  --space-70: 70px;
+  --space-80: 80px;
+  --space-100: 100px;
+  --space-115: 115px;
+  --space-170: 170px;
+}

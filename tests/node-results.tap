@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: Page keeps the three sections in the required order
+ok 1 - Page keeps the three sections in the required order
+  ---
+  duration_ms: 1.200417
+  type: 'test'
+  ...
+# Subtest: Independent notice and synthetic-result disclosure are present
+ok 2 - Independent notice and synthetic-result disclosure are present
+  ---
+  duration_ms: 0.105333
+  type: 'test'
+  ...
+# Subtest: Every local page reference exists
+ok 3 - Every local page reference exists
+  ---
+  duration_ms: 0.205041
+  type: 'test'
+  ...
+# Subtest: A fresh session begins with two Nova messages and no memory
+ok 4 - A fresh session begins with two Nova messages and no memory
+  ---
+  duration_ms: 0.096875
+  type: 'test'
+  ...
+# Subtest: Unknown conditions are rejected
+ok 5 - Unknown conditions are rejected
+  ---
+  duration_ms: 0.133375
+  type: 'test'
+  ...
+# Subtest: Unexpected answers are rejected without advancing the conversation
+ok 6 - Unexpected answers are rejected without advancing the conversation
+  ---
+  duration_ms: 0.099375
+  type: 'test'
+  ...
+# Subtest: Memory is not exposed before all three questions are answered
+ok 7 - Memory is not exposed before all three questions are answered
+  ---
+  duration_ms: 0.080292
+  type: 'test'
+  ...
+# Subtest: Treatment plays back three details at exactly message eight
+ok 8 - Treatment plays back three details at exactly message eight
+  ---
+  duration_ms: 0.072875
+  type: 'test'
+  ...
+# Subtest: Control reaches message eight without retained details or review
+ok 9 - Control reaches message eight without retained details or review
+  ---
+  duration_ms: 0.067375
+  type: 'test'
+  ...
+# Subtest: Pending memories prevent continuing
+ok 10 - Pending memories prevent continuing
+  ---
+  duration_ms: 0.150291
+  type: 'test'
+  ...
+# Subtest: Keep retains the chosen detail
+ok 11 - Keep retains the chosen detail
+  ---
+  duration_ms: 0.111125
+  type: 'test'
+  ...
+# Subtest: Edit validates and replaces a detail with a fictional alternative
+ok 12 - Edit validates and replaces a detail with a fictional alternative
+  ---
+  duration_ms: 0.0825
+  type: 'test'
+  ...
+# Subtest: Forget clears the value and cannot silently restore it
+ok 13 - Forget clears the value and cannot silently restore it
+  ---
+  duration_ms: 0.067833
+  type: 'test'
+  ...
+# Subtest: Continuation uses kept and edited details and excludes forgotten details
+ok 14 - Continuation uses kept and edited details and excludes forgotten details
+  ---
+  duration_ms: 0.092041
+  type: 'test'
+  ...
+# Subtest: Forgetting all three details yields the same neutral reply as control
+ok 15 - Forgetting all three details yields the same neutral reply as control
+  ---
+  duration_ms: 0.073875
+  type: 'test'
+  ...
+# Subtest: Completed sessions cannot submit extra answers or continue twice
+ok 16 - Completed sessions cannot submit extra answers or continue twice
+  ---
+  duration_ms: 0.10125
+  type: 'test'
+  ...
+# Subtest: Restart creates a clean session without carried-over details
+ok 17 - Restart creates a clean session without carried-over details
+  ---
+  duration_ms: 0.356667
+  type: 'test'
+  ...
+# Subtest: Synthetic chart percentages match the labelled cohort counts
+ok 18 - Synthetic chart percentages match the labelled cohort counts
+  ---
+  duration_ms: 0.050292
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.286666

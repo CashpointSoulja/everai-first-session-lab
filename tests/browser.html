@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>First session lab — Browser checks</title>
+<link rel="stylesheet" href="../design-tokens.css">
+<style>
+*{box-sizing:border-box}body{background:#000;color:#fff;margin:0;padding:30px;font:16px/1.6 var(--font-body)}h1{font-size:32px;font-weight:400;margin:0}p{color:var(--muted-dark)}button{padding:12px 22px;min-height:44px;background:var(--blue);color:#fff;border:0;border-radius:100px;font:inherit;cursor:pointer}button:disabled{opacity:.5}.layout{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:40px;max-width:1200px;margin:auto}iframe{width:390px;height:800px;border:1px solid var(--edge);border-radius:10px;box-sizing:content-box}li{margin:10px 0;font-size:14px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;color:var(--muted-dark)}@media(max-width:850px){.layout{grid-template-columns:1fr}body{padding:20px}iframe{width:375px;max-width:100%}}
+</style>
+<script src="browser.js" defer></script>
+</head>
+<body><main class="layout"><div><h1>Browser checks</h1><p>Real page, real controls. This suite drives the local Nova session in the frame and checks the visible state.</p><button id="run" type="button">Run browser checks</button><p id="summary" role="status">Ready to run.</p><ol id="checks"></ol><details><summary>Recorded run</summary><pre id="report-json"></pre></details></div><iframe id="app" title="First session lab under test" src="../index.html"></iframe></main></body>
+</html>

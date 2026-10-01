@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="First session lab: an independent product concept about memory and the first companion conversation.">
+  <title>First session lab — Ayo Ahmed</title>
+  <link rel="stylesheet" href="design-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="lab.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="notice">Independent concept by Ayo Ahmed <span aria-hidden="true">·</span> Synthetic data <span aria-hidden="true">·</span> Not affiliated with EverAI.</div>
+  <header class="site-header wrap">
+    <a class="identity" href="#today" aria-label="First session lab home">
+      <img src="assets/logo.webp" width="254" height="31" alt="EverAI">
+      <span>First session lab</span>
+    </a>
+    <nav aria-label="Page sections">
+      <a href="#today">Today</a>
+      <a href="#memory">Memory</a>
+      <a href="#experiment">The experiment</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="today" class="today wrap" aria-labelledby="today-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="product-name">First session lab</p>
+          <h1>A first session<br>worth <em>returning to.</em></h1>
+          <p class="lead">A small experiment in making the first companion conversation feel personal, consistent and worth continuing.</p>
+          <a class="action" href="#experiment">Explore the experiment <span aria-hidden="true">↗</span></a>
+        </div>
+        <img class="hero-art" src="assets/hero-poster.jpg" width="1280" height="720" alt="Reflective blue and lilac forms against a black background">
+      </div>
+      <div class="product-brief">
+        <div class="brief-intro">
+          <p class="source-label">From the public job post</p>
+          <h2 id="today-title">The companion<br>product today.</h2>
+          <p>The public hiring brief describes a companionship platform built around connection, with moderation governing the experience.</p>
+          <a class="source-link" href="https://jobs.ashbyhq.com/everai/67415245-9710-4d32-a544-735d779e1d44" target="_blank" rel="noopener noreferrer">Read the public job post <span aria-hidden="true">↗</span></a>
+        </div>
+        <dl class="product-facts">
+          <div><dt>Companionship at the core</dt><dd>The flagship product is described as a companionship platform focused on relationships and connection.</dd></div>
+          <div><dt>A governed experience</dt><dd>The post names EverGuard as the proprietary moderation system governing the product.</dd></div>
+          <div><dt>Scale that makes small changes matter</dt><dd>The post reports more than 50 million users and a goal of reaching 100 million next. These are company-reported figures.</dd></div>
+        </dl>
+      </div>
+      <p class="evidence-note">Source: Senior Product Manager, remote Europe. Checked 1 October 2026. This is a summary of the public product brief, not an observed walkthrough of the live companion journey.</p>
+    </section>
+
+    <section id="memory" class="memory wrap" aria-labelledby="memory-title">
+      <div class="memory-intro">
+        <p class="source-label">Working hypothesis</p>
+        <h2 id="memory-title">The bottleneck<br>is <em>memory.</em></h2>
+        <p class="lead">Remembering a detail is only useful if it makes the next moment feel connected.</p>
+      </div>
+      <div class="evidence-grid">
+        <article class="source-evidence" aria-labelledby="third-party-title">
+          <p class="source-label">Third-party source</p>
+          <h3 id="third-party-title">Recall can be strong.<br>Continuity can still break.</h3>
+          <p>A hands-on review reports strong recall in shorter conversations, but generic return openings and incorrect stored details in a longer test.</p>
+          <p class="evidence-note">Reported by one independent reviewer. This is an external account, not verified internal product data or a measured retention result.</p>
+          <a class="source-link" href="https://shouldieventry.com/products/candy-ai-review/" target="_blank" rel="noopener noreferrer">Read the companion review <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="inference" aria-labelledby="inference-title">
+          <p class="source-label">Our inference</p>
+          <h3 id="inference-title">Make remembering<br>visible from the start.</h3>
+          <p>If the companion correctly carries a shared detail into its next reply, the opening may feel more personal and less repetitive.</p>
+          <p class="evidence-note">That is the hypothesis for this concept. The review does not establish memory as the primary cause of first-session drop-off.</p>
+        </article>
+      </div>
+      <div class="continuity" aria-label="Proposed continuity loop">
+        <span>Share a detail</span><span aria-hidden="true">→</span><span>Carry it forward correctly</span><span aria-hidden="true">→</span><span>Give the conversation a next step</span>
+      </div>
+    </section>
+
+    <section id="experiment" class="experiment wrap" aria-labelledby="experiment-title">
+      <div class="experiment-intro">
+        <h2 id="experiment-title">A little memory.<br><em>A better beginning?</em></h2>
+        <p class="lead">Nova asks three light questions. At message eight, the treatment makes remembering visible—and lets the user decide what stays.</p>
+      </div>
+      <div class="experiment-brief">
+        <p><strong>Control:</strong> the same three questions, followed by a generic next step.</p>
+        <p><strong>Treatment:</strong> a three-detail review at message eight, with Keep, Edit and Forget.</p>
+        <p class="evidence-note">Proposed primary signal: returning on day seven. Secondary signal: completing the first session. Incorrect recall and unwanted familiarity must not increase.</p>
+      </div>
+      <div class="lab-toolbar">
+        <div class="view-switch" role="group" aria-label="Lab view">
+          <button type="button" data-view="session" aria-pressed="true" aria-controls="session-view">Session</button>
+          <button type="button" data-view="results" aria-pressed="false" aria-controls="results-view">Results</button>
+        </div>
+        <fieldset class="conditions">
+          <legend>Session condition</legend>
+          <label><input type="radio" name="condition" value="control"><span>Control</span></label>
+          <label><input type="radio" name="condition" value="treatment" checked><span>Treatment</span></label>
+        </fieldset>
+        <button type="button" id="restart-session" class="quiet-button">Restart session</button>
+      </div>
+      <p class="lab-disclosure">Fictional companion and answer presets. Replies are scripted and safe for work. Switching condition starts a fresh session. Nothing leaves this tab or survives a refresh.</p>
+      <p id="session-status" class="sr-only" role="status"></p>
+      <div id="session-view" class="lab-workspace">
+        <div class="phone" aria-label="Nova conversation">
+          <div class="phone-header">
+            <span class="nova-avatar" aria-hidden="true">N</span>
+            <div><h3>Nova</h3><p>Fictional companion · Scripted replies</p></div>
+            <span id="message-count">2 messages</span>
+          </div>
+          <ol id="transcript" class="transcript" aria-label="Conversation messages" aria-live="polite" aria-relevant="additions" tabindex="0"></ol>
+          <div class="phone-composer">
+            <p id="answer-hint">Choose a fictional answer</p>
+            <div id="answer-choices" class="answer-choices" role="group" aria-label="Fictional answers"></div>
+            <button type="button" id="continue-session" class="continue-button" hidden>Continue with Nova</button>
+          </div>
+        </div>
+        <aside class="inspector" aria-label="Session details">
+          <div class="memory-panel">
+            <div class="panel-heading"><h3>Memory panel</h3><span id="memory-count">0 retained</span></div>
+            <ul id="memory-list" class="memory-list"></ul>
+            <p class="panel-note">Keep and Forget act immediately. Edit opens fictional alternatives inline. These choices affect memory; past messages stay visible until you restart.</p>
+          </div>
+          <div class="events-panel">
+            <div class="panel-heading"><h3>Live event log</h3><button type="button" id="clear-events" class="quiet-button">Clear log</button></div>
+            <p class="panel-note">Events from your actions in this demo. Details contain field names and counts, never answer values. No events are sent elsewhere.</p>
+            <ol id="event-log" class="event-log" aria-label="Local analytics events" tabindex="0"></ol>
+          </div>
+        </aside>
+      </div>
+      <div id="results-view" class="results-view" hidden>
+        <div class="synthetic-banner"><strong>Illustrative synthetic numbers</strong><p>A made-up scenario for discussing the decision. These are not observed results and do not change when you use the chat.</p></div>
+        <div class="results-grid">
+          <figure class="return-chart" aria-labelledby="chart-title">
+            <h3 id="chart-title">Day 7 return</h3>
+            <p class="panel-note">Share returning seven days after their first session</p>
+            <div class="chart" role="img" aria-label="Illustrative synthetic day 7 return: control 28 percent; treatment 34 percent. The axis runs from zero to forty percent.">
+              <div class="chart-axis"><span>0%</span><span>10%</span><span>20%</span><span>30%</span><span>40%</span></div>
+              <div class="chart-row"><span>Control</span><div class="chart-plot"><div class="chart-bar control-bar" style="width:70%"><strong>28%</strong></div></div></div>
+              <div class="chart-row"><span>Treatment</span><div class="chart-plot"><div class="chart-bar treatment-bar" style="width:85%"><strong>34%</strong></div></div></div>
+            </div>
+            <figcaption>Illustrative difference: six more returning users per 100 people.</figcaption>
+            <table class="results-table"><caption>Illustrative synthetic cohort counts</caption><thead><tr><th scope="col">Condition</th><th scope="col">Users</th><th scope="col">Day 7 returns</th></tr></thead><tbody><tr><th scope="row">Control</th><td>1,000</td><td>280 (28%)</td></tr><tr><th scope="row">Treatment</th><td>1,000</td><td>340 (34%)</td></tr></tbody></table>
+          </figure>
+          <article class="decision">
+            <p class="source-label">The decision we would take</p>
+            <h3>Test with a small real cohort.<br>Keep the rollout limited.</h3>
+            <p>This synthetic pattern would justify investigating the idea, not declaring a win.</p>
+            <p>If a real test shows a reliable day-seven lift, with no increase in incorrect recall or unwanted familiarity, expand the test. Otherwise, revise or stop.</p>
+            <p class="evidence-note">Before a live test, set sample size, duration and guardrail limits. Synthetic numbers cannot establish significance or justify shipping.</p>
+            <button type="button" data-view="session" class="quiet-button">Return to Nova</button>
+          </article>
+        </div>
+      </div>
+      <noscript><p class="lab-disclosure">Enable JavaScript to try the scripted session. The source brief, experiment description and illustrative results remain available.</p><style>#results-view[hidden]{display:block}#session-view,.lab-toolbar{display:none}</style></noscript>
+    </section>
+  </main>
+  <footer class="wrap">
+    <p>First session lab <span aria-hidden="true">·</span> Ayo Ahmed</p>
+    <a href="#today">Back to the start <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>

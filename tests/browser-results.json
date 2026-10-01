@@ -1,0 +1,64 @@
+{
+  "startedAt": "2026-10-01T18:59:33.306Z",
+  "completedAt": "2026-10-01T18:59:34.522Z",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Page notice, real logo, local fonts and section order",
+      "passed": true
+    },
+    {
+      "name": "Small-phone layout fits at 375px and controls meet 44px minimum height",
+      "passed": true
+    },
+    {
+      "name": "Treatment keeps the memory review hidden before message eight",
+      "passed": true
+    },
+    {
+      "name": "Keep updates memory and emits an event without answer values",
+      "passed": true
+    },
+    {
+      "name": "Edit opens inline and selecting an alternative updates memory",
+      "passed": true
+    },
+    {
+      "name": "Forget clears the detail and continuation excludes it at message ten",
+      "passed": true
+    },
+    {
+      "name": "Control toggle starts fresh and completes without memory review",
+      "passed": true
+    },
+    {
+      "name": "Forgetting every detail leaves zero memory and a neutral next reply",
+      "passed": true
+    },
+    {
+      "name": "Restart clears chat and memory; clear log removes local events",
+      "passed": true
+    },
+    {
+      "name": "Results view labels synthetic data and chart values honestly",
+      "passed": true
+    },
+    {
+      "name": "Returning from results preserves the current session",
+      "passed": true
+    },
+    {
+      "name": "Condition control preserves focus while starting a fresh session",
+      "passed": true
+    }
+  ],
+  "sourceSha256": {
+    "index.html": "2b2209fded87afa81dac27e6dc44e30020496da98fa3a27aa76b1b6c3d2f73bb",
+    "lab.js": "8f075cde6c36d5f6a2d66b9640cc81514c2464cd28abdf076e2ceb6921460b6a",
+    "styles.css": "cc6a1087c127e5af2f225f49d26bfce4d8499b9624d3993fd27de9d0edcca116",
+    "design-tokens.css": "07eb61c57b25ea0d72905b678b9c35a2d776039311843fbbdcdbd92f6a208526",
+    "check.cjs": "10430d9e27bb48517f9d1da6c64e9875e5976b28499661f29441d0ae5a39060f",
+    "tests/browser.js": "64d6aee6fc9bde7ba5fd8cfc59b5ed693f5e3b19423910799710b4f8416e4427"
+  }
+}
